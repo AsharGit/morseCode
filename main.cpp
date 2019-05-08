@@ -16,9 +16,9 @@ int main()
 		exit(1);
 	}
 
-	buildTree(root, inFile);
-	encode(rootPtr,"puppy");
-	decode(rootPtr, ".__. .._ .__. .__. _.__");
+	root.buildTree(rootPtr, inFile);
+	root.encode(rootPtr,"puppy");
+	root.decode(rootPtr, ".__. .._ .__. .__. _.__");
 
 	// Close text file.
 	inFile.close();
